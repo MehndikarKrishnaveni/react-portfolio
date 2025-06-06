@@ -18,7 +18,7 @@ const Contact = () => {
                             </div>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/yourusername/"
+                        <a href="https://www.linkedin.com/in/mehndikar-krishnaveni-83813924a"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn Profile">
