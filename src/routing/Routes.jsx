@@ -33,4 +33,8 @@ export const router = createBrowserRouter([
             },
         ]
     }
-])
+],
+    {
+        basename: "/react-portfolio", // for GitHub Pages
+    }
+);
