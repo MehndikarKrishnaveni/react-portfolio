@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <>
             <section className=' h-[calc(100vh-80px)] md:h-[calc(100vh-80px)]  w-full flex items-center justify-center'>
-                <div className='h-[50%] w-[50%] flex flex-col items-center justify-evenly flex-wrap'>
+                <div className='h-[50%] flex flex-col items-center justify-evenly flex-wrap'>
                     <h1 className='text-4xl font-bold text-sky-500'>Contact Me</h1>
                     <p className='text-center text-xl'>Feel free to get in touch with me via email.
                         I'm also available on social media.</p>

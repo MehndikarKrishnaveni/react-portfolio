@@ -11,5 +11,14 @@
 }
 
 .dark .menu-bg{
-    background-color: black;
+    background-color: #101828;
+}
+
+.dark .menu-active{
+    color:oklch(82.8% 0.111 230.318);
+    background-color: oklch(50% 0.134 242.749);
+}
+
+.dark .menu-inactive:hover{
+    background-color:#1e2939;
 }

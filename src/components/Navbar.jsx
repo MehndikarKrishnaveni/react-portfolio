@@ -22,9 +22,9 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`${theme} h-[80px] w-full flex items-center justify-evenly fixed top-0 z-20`}>
-            <div className=" w-full mx-auto flex items-center justify-between h-20 px-4">
-                <h1 className='min-w-[200px] text-2xl md:text-3xl font-bold text-sky-500'>MEHNDIKAR KRISHNAVENI</h1>
+        <nav className={`${theme} min-w-[320px] h-[80px] w-full flex items-center justify-evenly fixed top-0 z-20`}>
+            <div className=" w-full max-w-7xl mx-auto flex items-center justify-between h-20 px-4">
+                <h1 className='min-w-[200px] text-sm md:text-3xl font-bold text-sky-500'>MEHNDIKAR KRISHNAVENI</h1>
                 
                 {/* desktop view */}
                 <ul className='hidden md:flex items-center gap-6 text-sky-500 font-bold'>
@@ -63,7 +63,7 @@ const Navbar = () => {
             
             {/* mobile menu */}
             {menuOpen && (                                          
-                <ul className="h-fit md:hidden  p-4 mt-[180px] space-y-1 font-bold text-sky-500  bg-white menu-bg">
+                <ul className="absolute top-[80px] left-0 w-full md:hidden bg-white p-4 space-y-1 font-bold text-sky-500 shadow-md z-10 menu-bg">
                     {navItems.map(({ name, path }) => (
                         
                         <li key={name}>
@@ -71,7 +71,7 @@ const Navbar = () => {
                                 to={path}
                                 onClick={() => setMenuOpen(false)}              
                                 className={({ isActive }) =>
-                                    `block py-1 px-3  rounded transition-colors duration-200 ${isActive ? 'bg-sky-100 dark:bg-sky-700 text-sky-700 dark:text-sky-300' : 'hover:bg-sky-50 dark:hover:bg-gray-800'
+                                    `block py-1 px-3  rounded transition-colors duration-200 ${isActive ? 'bg-sky-100  text-sky-700 menu-active' : 'hover:bg-sky-50 menu-inactive'
                                     }`
                                 }
                             >
