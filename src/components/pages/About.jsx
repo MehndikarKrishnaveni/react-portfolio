@@ -19,7 +19,7 @@ const About = () => {
     ];
   return (
     <>
-          <section id="about" className="flex flex-col md:flex-row justify-center items-start gap-10 px-6 py-10 max-w-7xl mx-auto">
+          <section id="about" className="md:h-[calc(90vh-80px)] mt-7 flex flex-col md:flex-row justify-center items-start gap-10 px-6 py-10 max-w-7xl mx-auto">
 
               {/* About Info Section */}
               <div className="md:w-1/2">
@@ -41,7 +41,7 @@ const About = () => {
               </div>
 
               {/* Skills Section */}
-              <div className="md:w-1/2">
+              <div className="w-full md:w-1/2">
                   <h2 className="text-3xl text-sky-500 font-bold mb-6">Skills</h2>
                   {skills.map((skill, index) => (
                       <div key={index} className="mb-4">

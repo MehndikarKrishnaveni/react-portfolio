@@ -7,7 +7,8 @@ const AppLayout = () => {
     return (
         <>
             <Navbar />
-            <main className={`${theme} h-[calc(100vh-80px)] mt-[80px] w-full p-2`}>
+            <main className={`${theme} min-h-screen w-full max-w-8xl mx-auto p-2 sm:p-4 md:p-6 lg:p-8
+`}>
                 <Outlet />
             </main>
         </>

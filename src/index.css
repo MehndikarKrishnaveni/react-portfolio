@@ -9,3 +9,7 @@
     background-color: black;
     color: white;
 }
+
+.dark .menu-bg{
+    background-color: black;
+}
