@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaUserGraduate } from 'react-icons/fa';
-
+import { motion } from 'framer-motion'
 const Education = () => {
     return (
         <>
@@ -8,7 +8,18 @@ const Education = () => {
             <section className="relative max-w-4xl mx-auto py-10 px-4">
 
                 {/* Vertical line in center */}
-                <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-sky-500 translate-x-[-50%]"></div>
+                <motion.div
+                    className="absolute left-1/2 w-[2px] bg-sky-500 translate-x-[-50%]"
+                    initial={{
+                        top:0
+                    }}
+                    whileInView={{
+                        bottom:0
+                    }}
+                    transition={{
+                        duration:1
+                    }}
+                ></motion.div>
 
                 {/* Timeline items */}
                 <div className="space-y-12">
