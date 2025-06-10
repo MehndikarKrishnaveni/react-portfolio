@@ -9,3 +9,4 @@ This is a personal portfolio website built using **React.js**, **Vite**, and **T
 - Modular Component Structure
 - Pages: Home, About, Education, Resume, Contact
 - Made all pages responsive using Tailwind CSS
+- Basic animations implemented using Framer Motion for smoother and interactive UI experience.
